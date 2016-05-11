@@ -26,7 +26,7 @@ public class HornetQServer {
 	private EmbeddedJMS jmsServer;
 
 	public void start(){
-		HPDLogger.info(this.getClass(), "************ JMS server starting for unit testing ***************");
+		AppLogger.info(this.getClass(), "************ JMS server starting for unit testing ***************");
 		Configuration configuration = new ConfigurationImpl();
 		// configuration.setJournalDirectory("build/data/journal");
 		configuration.setPersistenceEnabled(false);
